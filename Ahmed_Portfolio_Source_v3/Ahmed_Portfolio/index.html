@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ahmed Dev — Web & App Developer</title>
+<meta name="description" content="Ahmed builds fast, beautiful websites and mobile apps — React, Next.js, Flutter, React Native, Three.js. Interactive 3D experiences that people remember.">
+<meta name="theme-color" content="#05060a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ahmed Dev — Web & App Developer">
+<meta property="og:description" content="Websites, mobile apps and interactive 3D experiences. Move your finger over the statue.">
+<meta property="og:image" content="https://ahmed-dev.sites.tab.bot/og.jpg?v=2">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://ahmed-dev.sites.tab.bot/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://moosa-dev-lib.sites.tab.bot">
+<link rel="preconnect" href="https://moosa-dev-data.sites.tab.bot">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__logo">AHMED<span>.</span></div>
+  <div class="loader__bar"><i id="loaderBar"></i></div>
+  <div class="loader__num" id="loaderNum">00</div>
+</div>
+
+<canvas id="stage" class="stage" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span id="cursorLabel"></span></div></div>
+
+<header class="nav" id="nav">
+  <a href="#hero" class="nav__logo magnetic" aria-label="Ahmed Dev — home">AHMED<span>.</span></a>
+  <nav class="nav__links" id="navLinks" aria-label="Main">
+    <a href="#about">About</a><a href="#services">Services</a><a href="#apps">Apps</a><a href="#work">Websites</a><a href="#process">Process</a><a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="btn btn--ghost nav__cta magnetic"><span>Let's talk</span></a>
+  <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<main>
+<section class="hero" id="hero" aria-labelledby="heroTitle">
+  <div class="hero__inner">
+    <p class="eyebrow"><span class="pulse"></span> Available for work · Pakistan</p>
+    <h1 class="hero__title" id="heroTitle">
+      <span class="line"><span class="scramble" data-text="I build">I build</span></span>
+      <span class="line"><span class="scramble grad" data-text="digital">digital</span></span>
+      <span class="line"><span class="scramble" data-text="worlds.">worlds.</span></span>
+    </h1>
+    <p class="hero__sub">Hi, I'm <strong>Ahmed</strong> — a <em>Web &amp; App Developer</em> crafting fast websites, mobile apps and interactive 3D that people remember.</p>
+    <div class="hero__ctas">
+      <a href="#apps" class="btn btn--solid magnetic" data-cursor="View"><span>See my work</span></a>
+      <a href="#contact" class="btn btn--ghost magnetic"><span>Hire me</span></a>
+    </div>
+  </div>
+  <div class="hero__hint" id="hint"><span class="hint__icon"></span><span class="hint__txt">Move over the statue · drag to rotate</span></div>
+  <div class="hero__scroll"><span>Scroll</span><i></i></div>
+  <div class="hero__meta"><span>Web &amp; App Developer</span><span id="clock">PKT --:--</span></div>
+</section>
+
+<section class="about" id="about" aria-labelledby="aboutTitle">
+  <div class="wrap about__wrap">
+    <p class="kicker">01 — About</p>
+    <h2 class="sr-only" id="aboutTitle">About Ahmed</h2>
+    <p class="about__text reveal-words">I turn ideas into products people love to use. From pixel-perfect websites to smooth cross-platform apps, I design and build the whole thing — clean code, sharp interfaces and the kind of motion that makes a brand feel alive.</p>
+    <div class="about__cols">
+      <p>Every project starts with your goal, not a template. I plan the experience, design it, build it with modern tools, and ship it fast — then keep improving it with you.</p>
+      <p>Speed, mobile-first layouts and real attention to detail are my defaults. If it can be imagined in a browser or on a phone, I can build it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="stack" id="stack" aria-label="Tech stack">
+  <p class="kicker wrap">02 — Tech stack</p>
+  <div class="marquee"><div class="marquee__track">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>Tailwind</span><span>Three.js</span><span>GSAP</span>
+    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>Tailwind</span><span>Three.js</span><span>GSAP</span>
+  </div></div>
+  <div class="marquee marquee--rev"><div class="marquee__track">
+    <span>Flutter</span><span>React Native</span><span>Firebase</span><span>Expo</span><span>MongoDB</span><span>Figma</span><span>REST APIs</span><span>Stripe</span><span>Vercel</span><span>WebGL</span>
+    <span>Flutter</span><span>React Native</span><span>Firebase</span><span>Expo</span><span>MongoDB</span><span>Figma</span><span>REST APIs</span><span>Stripe</span><span>Vercel</span><span>WebGL</span>
+  </div></div>
+</section>
+
+<section class="services wrap" id="services" aria-labelledby="servTitle">
+  <div class="sec-head">
+    <p class="kicker">03 — Services</p>
+    <h2 class="sec-title split" id="servTitle">What I can build for you</h2>
+  </div>
+  <div class="services__grid">
+    <article class="svc" data-cursor="Web">
+      <div class="svc__num">01</div>
+      <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="9" width="38" height="28" rx="4"/><path d="M5 16h38M17 44h14M24 37v7"/><path d="M19 23l-4 4 4 4M29 23l4 4-4 4"/></svg>
+      <h3>Web Development</h3>
+      <p>Lightning-fast websites and web apps with React and Next.js — landing pages, dashboards, e-commerce and full products.</p>
+      <ul><li>Next.js</li><li>React</li><li>Node</li></ul>
+    </article>
+    <article class="svc" data-cursor="Apps">
+      <div class="svc__num">02</div>
+      <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="13" y="4" width="22" height="40" rx="5"/><path d="M21 9h6M22 39h4"/><rect x="17" y="15" width="14" height="10" rx="2"/></svg>
+      <h3>App Development</h3>
+      <p>Cross-platform mobile apps for Android and iOS with Flutter and React Native — one codebase, native feel.</p>
+      <ul><li>Flutter</li><li>React Native</li><li>Firebase</li></ul>
+    </article>
+    <article class="svc" data-cursor="Design">
+      <div class="svc__num">03</div>
+      <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="16" r="9"/><rect x="26" y="26" width="17" height="17" rx="3"/><path d="M30 6l9 14H21z"/></svg>
+      <h3>UI / UX Design</h3>
+      <p>Clean, modern interfaces designed in Figma — user flows, wireframes and polished UI that converts.</p>
+      <ul><li>Figma</li><li>Prototyping</li><li>Design systems</li></ul>
+    </article>
+    <article class="svc" data-cursor="3D">
+      <div class="svc__num">04</div>
+      <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l17 10v20L24 44 7 34V14z"/><path d="M7 14l17 10 17-10M24 24v20"/></svg>
+      <h3>3D &amp; Interactive</h3>
+      <p>Websites that wow — Three.js, WebGL, particles and scroll-driven animation, like the statue on this page.</p>
+      <ul><li>Three.js</li><li>WebGL</li><li>GSAP</li></ul>
+    </article>
+  </div>
+</section>
+
+<section class="apps" id="apps" aria-labelledby="appsTitle">
+  <div class="sec-head wrap">
+    <p class="kicker">04 — Apps</p>
+    <h2 class="sec-title split" id="appsTitle">Apps I've built</h2>
+    <p class="work__note"><span class="live live--inline"><i></i><span id="appCount">3 APPS</span></span> Android apps — keep scrolling, each one slides up over the last.</p>
+  </div>
+  <div class="apps__pin" id="appsPin">
+    <div class="apps__stack wrap" id="appStack"></div>
+  </div>
+</section>
+
+<section class="work wrap" id="work" aria-labelledby="workTitle">
+  <div class="sec-head webreveal">
+    <p class="kicker">05 — Websites</p>
+    <h2 class="webword" id="webWord" aria-label="Websites"><span class="ww" aria-hidden="true"><span style="--i:0">W</span><span style="--i:1">E</span><span style="--i:2">B</span><span style="--i:3">S</span><span style="--i:4">I</span><span style="--i:5">T</span><span style="--i:6">E</span><span style="--i:7">S</span></span><span class="webword__ghost" aria-hidden="true">WEBSITES</span></h2>
+    <p class="work__note"><span class="live live--inline"><i></i>7 LIVE</span> Real websites I built — tap any card to open it.</p>
+  </div>
+  <div class="work__grid">
+    <a class="proj tilt proj--feat" href="https://ahmed-nike.sites.tab.bot/" target="_blank" rel="noopener" data-cursor="Visit ↗" aria-label="Nike Concept Store — open the live site in a new tab">
+      <div class="proj__media proj__media--img"><img src="img/nike.webp?v=n1" alt="Nike concept store sneaker website" loading="lazy" width="800" height="500"><span class="live"><i></i>LIVE</span><span class="proj__feat">★ Featured</span></div>
+      <div class="proj__body"><div class="proj__top"><h3>Nike Concept Store</h3><span class="proj__url">ahmed-nike.sites.tab.bot</span></div>
+      <p>Sneaker store concept — swipe 3D shoe carousel, scroll-driven lineup, size &amp; colour picker, working bag and checkout.</p>
+      <div class="proj__foot"><div class="proj__tags"><span>GSAP</span><span>Lenis</span><span>JavaScript</span></div><span class="proj__btn">Visit live site <b>↗</b></span></div></div>
+    </a>
+    <a class="proj tilt" href="https://bazaarco.sites.tab.bot/" target="_blank" rel="noopener" data-cursor="Visit ↗" aria-label="Bazaarco — open the live site in a new tab">
+      <div class="proj__media proj__media--img"><img src="img/bazaarco.webp?v=s3" alt="Bazaarco e-commerce store website" loading="lazy" width="800" height="500"><span class="live"><i></i>LIVE</span></div>
+      <div class="proj__body"><div class="proj__top"><h3>Bazaarco</h3><span class="proj__url">bazaarco.sites.tab.bot</span></div>
+      <p>Premium fashion &amp; lifestyle store — 3D product hero, quick-view, working cart and checkout.</p>
+      <div class="proj__foot"><div class="proj__tags"><span>JavaScript</span><span>GSAP</span><span>Three.js</span></div><span class="proj__btn">Visit live site <b>↗</b></span></div></div>
+    </a>
+    <a class="proj tilt" href="https://aurum-estates.sites.tab.bot/" target="_blank" rel="noopener" data-cursor="Visit ↗" aria-label="Aurum Estates — open the live site in a new tab">
+      <div class="proj__media proj__media--img"><img src="img/aurum.webp" alt="Aurum Estates luxury real estate website" loading="lazy" width="800" height="500"><span class="live"><i></i>LIVE</span></div>
+      <div class="proj__body"><div class="proj__top"><h3>Aurum Estates</h3><span class="proj__url">aurum-estates.sites.tab.bot</span></div>
+      <p>Luxury real-estate site with a scroll-scrubbed house tour, 3D villa and gold motion design.</p>
+      <div class="proj__foot"><div class="proj__tags"><span>GSAP</span><span>Three.js</span><span>Lenis</span></div><span class="proj__btn">Visit live site <b>↗</b></span></div></div>
+    </a>
+    <a class="proj tilt" href="https://spice-route.sites.tab.bot/" target="_blank" rel="noopener" data-cursor="Visit ↗" aria-label="Spice Route — open the live site in a new tab">
+      <div class="proj__media proj__media--img"><img src="img/spice-route.webp?v=s3" alt="Spice Route restaurant and food delivery website" loading="lazy" width="800" height="500"><span class="live"><i></i>LIVE</span></div>
+      <div class="proj__body"><div class="proj__top"><h3>Spice Route</h3><span class="proj__url">spice-route.sites.tab.bot</span></div>
+      <p>Mughlai restaurant &amp; food delivery — animated menu, order tray and table reservations.</p>
+      <div class="proj__foot"><div class="proj__tags"><span>GSAP</span><span>Lenis</span><span>JavaScript</span></div><span class="proj__btn">Visit live site <b>↗</b></span></div></div>
+    </a>
+    <a class="proj tilt" href="https://pulsefit.sites.tab.bot/" target="_blank" rel="noopener" data-cursor="Visit ↗" aria-label="PulseFit — open the live site in a new tab">
+      <div class="proj__media proj__media--img"><img src="img/pulsefit.webp?v=s3" alt="PulseFit fitness app landing page" loading="lazy" width="800" height="500"><span class="live"><i></i>LIVE</span></div>
+      <div class="proj__body"><div class="proj__top"><h3>PulseFit</h3><span class="proj__url">pulsefit.sites.tab.bot</span></div>
+      <p>Fitness app landing page — 3D phone mockup, scroll storytelling and a live BMI calculator.</p>
+      <div class="proj__foot"><div class="proj__tags"><span>CSS 3D</span><span>GSAP</span><span>JavaScript</span></div><span class="proj__btn">Visit live site <b>↗</b></span></div></div>
+    </a>
+    <a class="proj tilt" href="https://wanderly.sites.tab.bot/" target="_blank" rel="noopener" data-cursor="Visit ↗" aria-label="Wanderly — open the live site in a new tab">
+      <div class="proj__media proj__media--img"><img src="img/wanderly.webp?v=s3" alt="Wanderly travel agency website with 3D globe" loading="lazy" width="800" height="500"><span class="live"><i></i>LIVE</span></div>
+      <div class="proj__body"><div class="proj__top"><h3>Wanderly</h3><span class="proj__url">wanderly.sites.tab.bot</span></div>
+      <p>Travel agency with a 3D globe — Hunza, Skardu, Dubai &amp; Istanbul tours, filters and booking.</p>
+      <div class="proj__foot"><div class="proj__tags"><span>Three.js</span><span>GSAP</span><span>Lenis</span></div><span class="proj__btn">Visit live site <b>↗</b></span></div></div>
+    </a>
+    <a class="proj tilt" href="https://nexapay.sites.tab.bot/" target="_blank" rel="noopener" data-cursor="Visit ↗" aria-label="NexaPay — open the live site in a new tab">
+      <div class="proj__media proj__media--img"><img src="img/nexapay.webp?v=s3" alt="NexaPay fintech dashboard website" loading="lazy" width="800" height="500"><span class="live"><i></i>LIVE</span></div>
+      <div class="proj__body"><div class="proj__top"><h3>NexaPay</h3><span class="proj__url">nexapay.sites.tab.bot</span></div>
+      <p>Fintech SaaS product site — glowing 3D card, live charts and an interactive dashboard.</p>
+      <div class="proj__foot"><div class="proj__tags"><span>JavaScript</span><span>Chart.js</span><span>GSAP</span></div><span class="proj__btn">Visit live site <b>↗</b></span></div></div>
+    </a>
+  </div>
+</section>
+
+<section class="process wrap" id="process" aria-labelledby="procTitle">
+  <div class="sec-head">
+    <p class="kicker">06 — Process</p>
+    <h2 class="sec-title split" id="procTitle">From idea to launch</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline__line"><i id="tlFill"></i></div>
+    <div class="step"><span class="step__dot"></span><span class="step__n">Step 01</span><h3>Discover</h3><p>We talk about your goals, audience and features. I map out the plan and timeline.</p></div>
+    <div class="step"><span class="step__dot"></span><span class="step__n">Step 02</span><h3>Design</h3><p>Wireframes, then a polished UI in Figma — you see exactly what you'll get.</p></div>
+    <div class="step"><span class="step__dot"></span><span class="step__n">Step 03</span><h3>Build</h3><p>Clean, fast code with regular previews so you can test as it grows.</p></div>
+    <div class="step"><span class="step__dot"></span><span class="step__n">Step 04</span><h3>Launch &amp; grow</h3><p>Deploy to the web or app stores, then improve with real feedback.</p></div>
+  </div>
+</section>
+
+<section class="stats wrap" aria-label="Numbers">
+  <div class="stat"><b data-count="40" data-suffix="+">0</b><span>Projects shipped</span></div>
+  <div class="stat"><b data-count="25" data-suffix="+">0</b><span>Happy clients</span></div>
+  <div class="stat"><b data-count="3" data-suffix="+">0</b><span>Years building</span></div>
+  <div class="stat"><b data-count="100" data-suffix="%">0</b><span>Mobile-first</span></div>
+</section>
+
+<section class="quotes wrap" aria-labelledby="qTitle">
+  <div class="sec-head">
+    <p class="kicker">07 — Kind words</p>
+    <h2 class="sec-title split" id="qTitle">What clients say</h2>
+  </div>
+  <div class="quotes__grid">
+    <figure class="quote"><blockquote>“Fast, creative and easy to work with. Our new site loads instantly and looks incredible on phones.”</blockquote><figcaption><span class="av">A</span><span><b>Ali R.</b><i>Startup founder</i></span></figcaption></figure>
+    <figure class="quote"><blockquote>“He turned a rough idea into a polished app in weeks. The attention to detail is next level.”</blockquote><figcaption><span class="av">S</span><span><b>Sara K.</b><i>Product manager</i></span></figcaption></figure>
+    <figure class="quote"><blockquote>“The 3D effects on our landing page got everyone talking. Highly recommended.”</blockquote><figcaption><span class="av">H</span><span><b>Hamza T.</b><i>Agency owner</i></span></figcaption></figure>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contactTitle">
+  <div class="wrap contact__wrap">
+    <div class="contact__space" aria-hidden="true"></div>
+    <div class="contact__col">
+    <div class="contact__copy">
+      <p class="kicker">08 — Contact</p>
+      <h2 class="contact__title split" id="contactTitle">Let's build something amazing.</h2>
+      <p class="contact__sub">Have a website or app in mind? Tell me about it — I usually reply within a day.</p>
+      <div class="contact__btns">
+        <a href="https://wa.me/923217441543?text=Hi%20Ahmed%2C%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" class="btn btn--solid magnetic" id="waBtn"><span>WhatsApp me</span></a>
+        <a href="mailto:moosaazam144@gmail.com?subject=Project%20enquiry" class="btn btn--ghost magnetic" id="mailBtn"><span>Email me</span></a>
+        <a href="tel:+923217441543" class="btn btn--ghost magnetic" id="callBtn"><span>Call me</span></a>
+      </div>
+      <ul class="contact__list">
+        <li><span class="contact__k">WhatsApp</span><a href="https://wa.me/923217441543" target="_blank" rel="noopener">+92 321 7441543</a></li>
+        <li><span class="contact__k">Phone</span><a href="tel:+923217441543">+92 321 7441543</a></li>
+        <li><span class="contact__k">Email</span><a href="mailto:moosaazam144@gmail.com">moosaazam144@gmail.com</a></li>
+      </ul>
+    </div>
+    <form class="form" id="form" novalidate>
+      <label><span>Your name</span><input name="name" required autocomplete="off" placeholder="Your name"></label>
+      <label><span>Email or phone</span><input name="contact" required autocomplete="off" placeholder="you@email.com"></label>
+      <label><span>Project type</span>
+        <select name="type"><option>Website</option><option>Mobile app</option><option>UI / UX design</option><option>3D / interactive site</option></select></label>
+      <label><span>Tell me about it</span><textarea name="msg" rows="3" placeholder="A short description of your idea"></textarea></label>
+      <button class="btn btn--solid btn--full magnetic" type="submit"><span>Send on WhatsApp</span></button>
+      <button class="form__alt" type="button" id="formMail">or send it by email →</button>
+      <p class="form__note" id="formNote" role="status"></p>
+    </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="foot__big" aria-hidden="true">AHMED<span>.</span></div>
+  <div class="wrap foot__row">
+    <span>© 2026 Ahmed Dev — Web &amp; App Developer</span>
+    <span class="foot__credit">Statue: built from Ahmed’s photo</span>
+    <a href="#hero" class="magnetic">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="apps.js?v=1"></script>
+<script src="main.js?v=8"></script>
+<script src="https://moosa-dev-lib.sites.tab.bot/v/three.min.js"></script>
+<script src="https://moosa-dev-data.sites.tab.bot/v/statue-data.js?v=5"></script>
+<script src="statue.js?v=5"></script>
+</body>
+</html>
